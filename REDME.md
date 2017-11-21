@@ -42,7 +42,18 @@ npm install rxjs
 * `n(0-9/a-z)`  送出的元素(next)         ---0--1--2--3---
 * `|`           送出結束(complete)      ---0--1--2--3|
 * `#`           送出錯誤(error)         ---0--1--2--3---#
-* `()`          同步送出                (123|)
+* `()`          同步送出
+
+範例：
+
+* `Observable.of(1, 2, 3)`              -> `(123|)`
+* `Observable.from([1, 2, 3])`          -> `(123|)`
+* `Observable.interval(10)`             -> `-0123...`
+* `Observable.fromEvent(DOM, 'click')`  -> `---e--e---e-e...`
+* `Observable.interval(10)`             -> `-012...`
+    `.take(3)`                          -> `-01(2|)`
+    `.map(x => x + 1)`                  -> `-12(3|)`
+    `.filter(x => x % 2 === 0)`         -> `--2|`
 
 ## 學習資源
 
