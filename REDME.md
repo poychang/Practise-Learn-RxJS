@@ -1,5 +1,7 @@
 # RxJS 練習曲
 
+建議使用 VS Code 進行練習，並於環境中安裝 [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) 擴充套件，詳細資訊請參考 [Quokka.js 官方網站](https://quokkajs.com/)。
+
 ## 分類
 
 * 組合 combination
