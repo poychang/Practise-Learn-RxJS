@@ -1,7 +1,7 @@
 import {from} from 'rxjs/Observable/from';
 import {interval} from 'rxjs/Observable/interval';
 import {of} from 'rxjs/Observable/of';
-import {mapTo, mergeMap} from 'rxjs/operators';
+import {mapTo, mergeMap, tap} from 'rxjs/operators';
 
 // merge(input: Observable): Observable
 // 將多個 observables 轉換成單個 observable。
@@ -15,4 +15,5 @@ const source1$ = from([1, 1]);
 const source2$ = from([10, 20, 30]);
 
 // ---1s--1s--2.5s--1s--1s---
-source1$.pipe(mergeMap(val => source2$)).subscribe(val => console.log(val));
+source1$.pipe(mergeMap(val => source2$), tap(val => console.log(val)))
+  .subscribe();
