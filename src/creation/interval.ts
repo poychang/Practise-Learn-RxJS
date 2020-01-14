@@ -1,6 +1,5 @@
-import {interval} from 'rxjs/Observable/interval';
-import {of} from 'rxjs/Observable/of';
-import {take} from 'rxjs/operators';
+import { interval, of } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 // interval(period: number, scheduler: Scheduler): Observable
 // 基於給定時間間隔發出數字序列。

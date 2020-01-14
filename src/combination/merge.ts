@@ -1,6 +1,5 @@
-import {interval} from 'rxjs/Observable/interval';
-import {of} from 'rxjs/Observable/of';
-import {mapTo, merge} from 'rxjs/operators';
+import { interval, of } from 'rxjs';
+import { mapTo, merge } from 'rxjs/operators';
 
 // merge(input: Observable): Observable
 // 將多個 observables 轉換成單個 observable。

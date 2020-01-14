@@ -1,7 +1,5 @@
-import {Observable} from 'rxjs/Observable';
-import {forkJoin} from 'rxjs/Observable/forkJoin';
-import {timer} from 'rxjs/Observable/timer';
-import {mapTo} from 'rxjs/operators';
+import { Observable, forkJoin, timer } from 'rxjs';
+import { mapTo } from 'rxjs/operators';
 
 // forkJoin(...args, selector : function): Observable
 // 當所有 observables 完成時，發出每個 observable 的最新值。

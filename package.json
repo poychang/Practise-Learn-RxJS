@@ -1,5 +1,5 @@
 {
-  "name": "learnrxjs",
+  "name": "learning-rxjs",
   "version": "1.0.0",
   "description": "Learning RxJS",
   "main": "index.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rxjs": "^5.5.2"
+    "rxjs": "^6.5.4"
   }
 }

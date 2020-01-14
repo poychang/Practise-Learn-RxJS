@@ -1,5 +1,4 @@
-import {from} from 'rxjs/Observable/from';
-import {interval} from 'rxjs/Observable/interval';
+import { from, interval } from 'rxjs';
 
 // from(ish: ObservableInput, mapFn: function, thisArg: any,
 // scheduler:Scheduler): Observable

@@ -1,5 +1,5 @@
-import {of} from 'rxjs/Observable/of';
-import {map} from 'rxjs/operators';
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 // map(project: Function, thisArg: any): Observable
 // 對源 observable 的每個值應用投射函式。
@@ -7,9 +7,11 @@ import {map} from 'rxjs/operators';
 
 // 資料來源
 const source$ = of(1, 2, 3, 4, 5);
-const sourceObject$ = of({ name: 'poy', age: 32 },
-                         { name: 'john', age: 28 },
-                         { name: 'tom', age: 25 });
+const sourceObject$ = of(
+    { name: 'poy', age: 32 },
+    { name: 'john', age: 28 },
+    { name: 'tom', age: 25 }
+);
 
 source$.pipe(map(val => val * 10)).subscribe(p => console.log(p));
 

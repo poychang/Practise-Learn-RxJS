@@ -1,14 +1,13 @@
-import {Subject} from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 const subject$: Subject<number> = new Subject<number>();
 let i = 0;
 
 const interval = setInterval(() => {
-  subject$.next(i++);
+    subject$.next(i++);
 }, 1000);
 
 subject$.subscribe(data => {
-  if (data === 3)
-    clearInterval(interval);
-  console.log(data);
+    if (data === 3) clearInterval(interval);
+    console.log(data);
 });

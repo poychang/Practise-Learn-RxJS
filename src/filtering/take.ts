@@ -1,5 +1,5 @@
-import {of} from 'rxjs/Observable/of';
-import {take} from 'rxjs/operators';
+import { of } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 // take(count: number): Observable
 // 在完成前發出 N 個值(N 由參數決定)。

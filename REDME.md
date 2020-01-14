@@ -13,9 +13,9 @@
 * 轉換 transformation
 * 工具 utility
 
-## 建立練習環境
+## 練習環境
 
-練習幻境的建置安裝指令
+初始話練習環境的指令：
 
 ```bash
 mkdir LearnRxJS
@@ -27,14 +27,11 @@ npm init
 npm install rxjs
 ```
 
-使用 [Visual Studio Code](https://code.visualstudio.com/) 編輯器
+## VS Code
 
-安裝擴充套件：
+推薦使用 [Visual Studio Code](https://code.visualstudio.com/) 編輯器來練習，建議安裝以下 VS Code 擴充套件：
 
-* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-    * 能夠幫助我們在編輯器中快速建立原型測試，包括了行內錯誤提示、代碼測試與覆蓋率提示、富文本輸出格式化等等
-* [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
-    * 這個工具能夠自動化格式
+* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) 能夠幫助我們在編輯器中快速建立原型測試，包括了行內錯誤提示、代碼測試與覆蓋率提示、富文本輸出格式化等等
 
 ## Marble Diagram
 
